@@ -1,0 +1,13 @@
+
+header {
+    background-color: $themeBackgroundLight;
+    color: $themeTextColorHeading;
+    margin-bottom: $headerSpacingBottom;
+    height: $headerHeight;
+    padding: ($headerHeight / 2) 0;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+}

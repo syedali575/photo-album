@@ -1,0 +1,44 @@
+
+.photos li.zoomed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    cursor: zoom-out;
+
+    &::after {
+        content: '';
+    }
+
+    @media screen and (min-width: $threeColumnWidthBreak) {
+        width: 70%;
+        left: 15%;
+    }
+
+    @media screen and (min-width: $fourColumnWidthBreak) {
+        width: 40%;
+        left: 30%;
+    }
+}
+
+.cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #333333;
+    opacity: 0.7;
+}
+
+.zooming {
+    .cover {
+        display: block;
+    }
+
+    nav {
+        display: block;
+    }
+}
